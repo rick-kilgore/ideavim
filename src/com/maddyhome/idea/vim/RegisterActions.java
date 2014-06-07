@@ -273,7 +273,7 @@ public class RegisterActions {
       new Shortcut(new KeyStroke[]{KeyStroke.getKeyStroke('g'), KeyStroke.getKeyStroke(KeyEvent.VK_END, 0)})
     });
     parser.registerAction(MappingMode.NVO, "VimMotionLastMatchChar", Command.Type.MOTION,
-                          new Shortcut(';'));
+                          new Shortcut(':'));
     parser.registerAction(MappingMode.NVO, "VimMotionLastMatchCharReverse", Command.Type.MOTION,
                           new Shortcut(','));
     parser.registerAction(MappingMode.NVO, "VimMotionLastNonSpace", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
@@ -479,7 +479,7 @@ public class RegisterActions {
       .registerAction(MappingMode.NVO, "VimSearchAgainPrevious", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE | Command.FLAG_SAVE_JUMP,
                       new Shortcut('N'));
     parser.registerAction(MappingMode.NVO, "VimExEntry", Command.Type.OTHER_READ_WRITE,
-                          new Shortcut(':'));
+                          new Shortcut(';'));
     parser.registerAction(MappingMode.NVO, "VimSearchWholeWordForward", Command.Type.MOTION,
                           Command.FLAG_MOT_EXCLUSIVE | Command.FLAG_SAVE_JUMP,
                           new Shortcut('*'));
